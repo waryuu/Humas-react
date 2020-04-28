@@ -1,9 +1,4 @@
 
-Theme Name: Prantokon
-Version: 1.0
-Author: Jsoft
-Description: Responsive HTML5 / CSS3 One-page Landing App Template.
-*/
 
 /**
  *** CSS Indexing ***
@@ -38,45 +33,30 @@ body {
 /*----------------------------
 ---------- RESET CSS ---------
 ----------------------------*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 500;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0px;
-    color: #FFFFFF;
+
 }
 h1 {
     font-size: 48px;
+    color: #16420b;
 }
 h2 {
     font-size: 30px;
-	color: #FFFFFF;
+	color: #16420b;
 }
 h3 {
     font-size: 24px;
-    color: #FFFFFF;
+    color: #16420b;
 }
 h4 {
     font-size: 18px;
-	color: #FFFFFF;
+	color: #16420b;
 }
 h6 {
     font-size: 14px;
-	color: #FFFFFF;
+	color: #16420b;
 }
 h5 {
-	color: #FFFFFF;
+	color: #16420b;
 }
 a {
     transition: 0.6s;
@@ -89,10 +69,7 @@ img {
     max-width: 100%;
     height: auto;
 }
-iframe {
-    width: 100%;
-    border: none;
-}
+
 a,
 a:hover,
 a:focus,
@@ -102,14 +79,9 @@ button:focus {
     border: none;
     outline: 0;
 }
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
 }
-ol {
-    margin-bottom: 0;
-}
+
 select:focus,
 select:active {
     box-shadow: none;
@@ -175,32 +147,7 @@ textarea:focus {
     height: 0;
     margin: auto;
 }
-.pricing-area .sec-title h2 .sec-title-border,
-.download-area .sec-title h2 .sec-title-border {
-    border-color: #fff;
-}
-.pricing-area .sec-title h2 .sec-title-border span::before,
-.download-area .sec-title h2 .sec-title-border span::before {
-    background-color: #fff;
-}
-.sec-title h2 .sec-title-border span {
-    width: 9px;
-    height: 9px;
-    position: relative;
-    display: inline-block;
-    margin: 0 1px;
-    bottom: 23.3px;
-}
-.sec-title h2 .sec-title-border span::before {
-    background: orange;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    transform: rotate(45deg);
-}
+
 .mt-100 {
     margin-top: 100px;
 }
@@ -212,46 +159,9 @@ textarea:focus {
 }
 .ptb-90 {
     padding: 90px 0;
-    background-color: black;
+    background-color: white;
 }
-.owl-nav div {
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    width: 35px;
-    background: #fff;
-    color: #000;
-    height: 35px;
-    line-height: 36px;
-    border-radius: 100%;
-    text-align: center;
-    font-size: 29px;
-    transition: 0.4s;
-    margin-top: -60px;
-}
-.owl-nav div:hover {
-    background: #000;
-    color: #fff;
-}
-.owl-nav div.owl-next {
-    right: 20px;
-    left: auto;
-}
-.owl-dots {
-    text-align: center;
-    margin-top: 30px;
-}
-.owl-dot {
-    width: 10px;
-    height: 10px;
-    border: 1px solid #0074da;
-    border-radius: 10px;
-    display: inline-block;
-    margin: 0 3px;
-}
-.owl-dot.active {
-    background: #0074da;
-}
+
 .display-table {
     display: table;
     height: 100%;
@@ -261,8 +171,8 @@ textarea:focus {
     display: table-cell;
     vertical-align: middle;
 }
-.header.sticky .mainmenu li a.appao-btn ,
-.mainmenu li a.appao-btn,
+.header.sticky .navbar  a.appao-btn ,
+.navbar  a.appao-btn,
 .appao-btn {
     border: 1px solid #fff;
     color: #fff;
@@ -273,43 +183,20 @@ textarea:focus {
 	cursor: pointer;
 	font-weight: 500;
 }
-.header.sticky .mainmenu li a.appao-btn:hover ,
-.mainmenu li a.appao-btn:hover,
-.appao-btn:hover {
-    background: #fff;
-    border: 1px solid #fff;
-    color: #666;
+
+
+.container-small {
+    width: 500px;
+    margin: auto;
 }
-.appao-btn2 {
-    border: 1px solid transparent;
-	border-radius: 25px;
-	background: #000529; /* Old browsers */
-	background-image: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%); /* FF3.6-15 */
-	background-image: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%); /* Chrome10-25,Safari5.1-6 */
-	background-image: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+.container-med {
+    width: 800px;
+    margin: auto;
 }
-.appao-btn2:hover {
-    border: 1px solid #000529;
-	background: transparent;
-	background-image: none;
-    color: #000529;
-}
-.flexbox-center {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-input::-webkit-input-placeholder {
-    color: #666;
+.container-head {
+    width: 1260px;
+    margin: auto;
+
 }
 
 /*--------------------------------------
@@ -317,52 +204,70 @@ input::-webkit-input-placeholder {
 ---------------------------------------*/
 .header {
     position: fixed;
-    top: 0;
-    left: 0;
 	transition: all 0.4s;
     width: 100%;
     z-index: 99;
 	padding: 18px 0;
 }
-.mainmenu {
+.navbar {
     text-align: right;
 }
-.mainmenu li {
+
+.navbar a {
     display: inline-block;
-    text-transform: uppercase;
-}
-.mainmenu li a {
-    display: inline-block;
-    color: #fff;
-    position: relative;
+    color: yellow;
     padding: 5px 16px;
 	margin: 0 3px;
     border: 1px solid transparent;
+    
+    font-size: 15px;
 }
-.slicknav_menu {
-	padding: 0;
-    background: transparent;
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+
 }
-.slicknav_menu a.active,
-.mainmenu ul li a:hover,
-.mainmenu ul li a.active {
-    border: 1px solid orange;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(3,0,0,0.2);
+  z-index: 1;
 }
-.mainmenu {
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: left;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
 }
-.slicknav_menu {
+.navbar {
+    display: block;
+}
+.slicknav_navbar {
 	display: none;
+}
+.navbar ul a.active{
+    background-color: black;
+    border-radius: 10px;
+}
+.navbar ul a:hover {
+    background-color: red;
 }
 /*Buat ganti warna headernya*/
 .header.sticky {
-	border-bottom: 1px solid #fff;
-	background: #000000
+	border-bottom: 3px solid #000;
+    padding: 5px 0;
+	background: grey;
 }
-.header.sticky {
-	padding: 10px 0;
-}
-.mainmenu li a.appao-btn {
+
+.navbar a.appao-btn {
 	margin-left: 55px;
 }
 /*--------------------------------------
@@ -379,7 +284,7 @@ input::-webkit-input-placeholder {
 	position: relative;
     background-image: url(../img/scb1.png);
     /*repeat bisa untuk background nih*/
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center;
 	background-attachment: fixed;
     background-size: cover;
@@ -394,7 +299,7 @@ input::-webkit-input-placeholder {
 	bottom: 0;
 	z-index: -1;
 	position: absolute;
-	background: #192534; 
+	background: grey; 
 }
 
 .hero-area-content {
@@ -417,113 +322,141 @@ input::-webkit-input-placeholder {
 ------------------------------------*/
 
 /*--------------------------------------
--------- ABOUT AREA CSS START / Sapaan Hangat --------
+-------- PROFIL AREA CSS START / Sapaan Hangat --------
 ---------------------------------------*/
-.about-area {
+.profil-area {
 	text-align: center;
 }
-.single-about-box {
-    border: 1px solid orange;
+.row-profil{
+    width : 30%;
+    margin: auto;
+    display: inline;
+}
+
+.single-profil-box {
+    border-radius: 10px;
+    border: 1px solid green;
+    display: block;
+    font-color: green;
+
+
+}
+.single-profil-box:hover {
+	box-shadow: 0 0 10px green;
+
+}
+.single-profil-box h4 {    
+	margin: 10px 10px;
+    text-align: center;
+
+}
+/*--------------------------------------
+---------- PROFIL AREA CSS END /FIXED ----------
+---------------------------------------*/
+
+/*--------------------------------------
+-------- SCB DALAM ANGKA / COUNTERUP AREA CSS START --------
+---------------------------------------*/
+.counter-area {
+    
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    padding-top: 30px;
+}
+.counter-area::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white; /* Old browsers */
+    
+    opacity: 0.85;
+    z-index: -1;
+}
+.single-counter-box i::before {
+    background: #0861b5;
+    width: 120px;
+    display: block;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 100%;
+    font-size: 50px;
+    margin: auto;
+    box-shadow: 0 8px 8px #020202;
+    border: 2px solid white;
     transition: all 0.4s;
 }
 
-.single-about-box:hover {
-	box-shadow: 0 0 10px orange;
+.single-counter-box a{
+    border: 3px solid white;
 }
 
-.single-about-box h4 {
-	margin: 25px 0 15px;
-    color : orange;
+.single-counter-box h1 {
+    margin: 25px 0 10px;
+    color : green;
+}
+.single-counter-box p {
+    font-size: 24px;
+    line-height: normal;
+    color : green;
+}
+
+.single-counter-box {
+    margin-top: 40px;
+}
+.single-counter-box:hover i::before {
+    background: transparent;
+    border: 2px solid #fff;
+    box-shadow: none;
 }
 /*--------------------------------------
----------- ABOUT AREA CSS END /FIXED ----------
+-------- SCB DALAM ANGKA / COUNTERUP AREA CSS END --------
 ---------------------------------------*/
 
+
 /*--------------------------------------
--------- FEATURE AREA CSS START --------
+-------- COUNTDOWN / HITUNG MUNDUR --------
 ---------------------------------------*/
-.feature-area {
-	z-index: 1;
-	position: relative;
+
+.countdown-area {
     
-    background-position: center;
-    background-size: cover;
-}
-.feature-area::before {
-	content: "";
-	top: 0;
-	left: 0;
-    opacity: 0.85;
-	right: 0;
-	bottom: 0;
-	background: #6f6f6f; /* Old browsers */
-	
-	position: absolute;
-}
-.single-feature-box h4 {
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-.single-feature-box li {
-    margin-bottom: 45px;
-    display: flex;
-}
-.single-feature-box li:last-child {
-    margin-bottom: 0;
-}
-.feature-box-info {
-    flex: 5;
-}
-.feature-box-icon {
-    flex: 1;
-	font-size: 20px;
-	transition: all 0.4s;
-}
-.single-feature-box li:hover .feature-box-icon i::before {
-    border-radius: 0;
-}
-.single-feature-box h2,
-.single-feature-box h3,
-.single-feature-box h4,
-.single-feature-box {
-	color: #fff;
-}
-.feature-box-icon i::before {
-    border: 2px dashed #fff;
-    width: 40px;
-    display: inline-block;
-    height: 40px;
+    position: relative;
     text-align: center;
-    line-height: 38px;
-    border-radius: 100%;
-	transition: all 0.4s;
+    color: #fff;
+
 }
-/*--------------------------------------
---------- FEATURE AREA CSS END ---------
----------------------------------------*/
+.countdown {
+    position: relative;
+    text-align: center;
+    color: green;
+    padding-top: 50px;
+    font-size: 30px;
+}
+.single-countdown-box {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.single-countdown-box h1 {
+    font-size: 25px;
+    color : green;
+    font-weight: bold;
+
+}
+.single-countdown-box p {
+    font-size: 16px;
+    line-height: normal;
+    color : green;
+}
+
 
 /*--------------------------------------
--------- SHOWCASE AREA CSS START -------
----------------------------------------*/
-.showcase-area {
-	padding-bottom: 50px;
-}
-.single-showcase-box {
-	padding: 0 0 40px;
-}
-.single-showcase-box p {
-	margin: 20px 0 25px;
-}
-.single-showcase-box h4 {
-	font-size: 20px;
-}
-/*--------------------------------------
---------- SHOWCASE AREA CSS END --------
----------------------------------------*/
-
-
-/*--------------------------------------
------- SCREENSHOT AREA CSS START -------
+--- SCREENSHOT IMAGE AREA CSS START ----
 ---------------------------------------*/
 .screenshots-area .sec-title {
     margin-bottom: 15px;
@@ -535,6 +468,16 @@ input::-webkit-input-placeholder {
 .single-screenshot.slick-slide {
 	z-index: 1;
 }
+
+.single-screenshot img {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
 .single-screenshot.slick-active {
 	-webkit-transform: scale(1.1);
 	-ms-transform: scale(1.1);
@@ -544,14 +487,16 @@ input::-webkit-input-placeholder {
 }
 .single-screenshot.slick-center {
 	position: relative;
-	-webkit-transform: scale(1.25);
-	-ms-transform: scale(1.25);
-	transform: scale(1.25);
+	-webkit-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	transform: scale(1.5);
 	z-index: 3;
 	transition: all 0.3s ease-in 0s;
 }
 .single-screenshot img {
 	width: 100%;
+    opacity: 20
+    
 }
 .slick-dots {
 	text-align: center;
@@ -576,8 +521,8 @@ input::-webkit-input-placeholder {
     display: inline-block;
 }
 .single-screenshot.slick-center {
-    background-image: url(../img/screenshot/mockup.png);
-    background-size: 100% 100%;
+    background-image: url(spotlight.jpg);
+    background-size: 50% 50%;
 }
 .single-screenshot.slick-center img {
     padding: 35px 20px 55px;
@@ -587,77 +532,10 @@ input::-webkit-input-placeholder {
 ---------------------------------------*/
 
 
-/*--------------------------------------
---------- PRICING AREA CSS END ---------
----------------------------------------*/
 
-
-/*--------------------------------------
--------- COUNTERUP AREA CSS START --------
----------------------------------------*/
-.counter-area {
-    
-	background-attachment: fixed;
-    position: relative;
-    text-align: center;
-    z-index: 1;
-	color: #fff;
-	padding-top: 50px;
-}
-.counter-area::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-	background: white; /* Old browsers */
-	
-    opacity: 0.85;
-    z-index: -1;
-}
-.single-counter-box i::before {
-    background: #0861b5;
-    width: 120px;
-    display: block;
-    height: 120px;
-    line-height: 120px;
-    border-radius: 100%;
-    font-size: 50px;
-    margin: auto;
-    box-shadow: 0 8px 8px #020202;
-	border: 2px solid orange;
-	transition: all 0.4s;
-}
-
-.single-counter-box a{
-    border: 3px solid orange;
-}
-
-.single-counter-box h1 {
-	margin: 25px 0 10px;
-    color : orange;
-}
-.single-counter-box p {
-    font-size: 24px;
-    line-height: normal;
-    color : orange;
-}
-}
-.single-counter-box {
-    margin-top: 40px;
-}
-.single-counter-box:hover i::before {
-	background: transparent;
-	border: 2px solid #fff;
-    box-shadow: none;
-}
-/*--------------------------------------
--------- COUNTERUP AREA CSS END --------
----------------------------------------*/
 
 .footer {
-    background: url(../img/footer-bg.jpg) no-repeat center / cover;
+    /*background: url(../img/footer-bg.jpg) no-repeat center / cover;*/
     position: relative;
     z-index: 1;
     padding-bottom: 35px;
@@ -669,16 +547,16 @@ input::-webkit-input-placeholder {
     left: 0;
     width: 100%;
     height: 100%;
-	background: #000529; /* Old browsers */
-	background: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+	background: #000; /* Old browsers */
+	/*background: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%); /* FF3.6-15 */*/*/
+	/*background: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%); /* Chrome10-25,Safari5.1-6 */*/
+	/*background: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);*/
     opacity: 0.85;
     z-index: -1;
 }
 
 /*---------------------------------------
------- MAP AND FOOTER AREA CSS END ------
+------ FOOTER AREA CSS END --------------
 ---------------------------------------*/
 
 /*--------------------------------------
@@ -716,161 +594,3 @@ input::-webkit-input-placeholder {
 /*--------------------------------------
 --------- SCROLL-TO-TOP CSS END ---------
 ---------------------------------------*/
-
-/*--------------------------------------
------- INDEX SLIDER PAGE CSS START -----
----------------------------------------*/
-.hero-area-slider .owl-nav div {
-	opacity: 0;
-}
-.hero-area-slider:hover .owl-nav div {
-	opacity: 1;
-}
-.hero-area-single-slide h1,
-.hero-area-single-slide p,
-.hero-area-single-slide a.appao-btn {
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-}
-.hero-area-single-slide h1 {
-    -webkit-transform: translateX(-140px);
-    transform: translateX(-140px);
-    -webkit-transition: all .6s linear 0s;
-    transition: all .6s linear 0s;
-}
-.hero-area-single-slide p {
-    -webkit-transform: translateX(-140px);
-    transform: translateX(-140px);
-    -webkit-transition: all .15s linear 0s;
-    transition: all .15s linear 0s;
-}
-.hero-area-single-slide a.appao-btn {
-    -webkit-transform: translateY(120px);
-    transform: translateY(120px);
-    -webkit-transition: all .10s linear 0s;
-    transition: all .10s linear 0s;
-}
-.hero-area-single-slide img {
-    opacity: 0;
-    -webkit-transition: all .4s;
-    transition: all .4s;
-}
-.active .hero-area-single-slide h1,
-.active .hero-area-single-slide p,
-.active .hero-area-single-slide a.appao-btn {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-.active .hero-area-single-slide h1 {
-    -webkit-transition: all 700ms linear 0s;
-    transition: all 700ms linear 0s;
-}
-.active .hero-area-single-slide p {
-    -webkit-transition: all 1500ms linear 0s;
-    transition: all 1500ms linear 0s;
-}
-.active .hero-area-single-slide a.appao-btn {
-    -webkit-transition: all 1300ms linear 0s;
-    transition: all 1300ms linear 0s;
-}
-.active .hero-area-single-slide img {
-    opacity: 1;
-}
-/*--------------------------------------
-------- INDEX SLIDER PAGE CSS END ------
----------------------------------------*/
-
-/*--------------------------------------
--------- Pre Loader Style START --------
----------------------------------------*/
-#preloader {
-  position: fixed;
-  z-index: 99999999999;
-  top: 0;
-  left: 0;
-  overflow: visible;
-  width: 100%;
-  height: 100%;
-  background: #fff url("../img/loader.gif") no-repeat center center;
-}
-/*--------------------------------------
---------- Pre Loader Style END ---------
----------------------------------------*/
-
-/*--------------------------------------
--------- BREADCRUMB CSS START --------
----------------------------------------*/
-.breadcrumb-area {
-    text-align: center;
-}
-.hero-area.breadcrumb-area {
-    padding: 130px 0 100px;
-}
-.hero-area.breadcrumb-area .hero-area-content {
-    padding: 0;
-}
-.breadcrumb-area ul li {
-    display: inline-block;
-}
-.breadcrumb-area ul li a {
-    color: #fff;
-	padding: 0 10px;
-	position: relative;
-}
-.breadcrumb-area ul li a::before {
-	position: absolute;
-	right: -2px;
-	top: 0;
-	bottom: 0;
-	margin: auto;
-	content: "/";
-}
-.breadcrumb-area ul li:last-child a::before {
-	content: "";
-}
-.breadcrumb-area ul {
-    margin-top: 10px;
-}
-.breadcrumb-area ul li a:hover {
-    color: #000;
-}
-/*--------------------------------------
---------- BREADCRUMB CSS END ---------
----------------------------------------*/
-
-/*--------------------------------------
--------- BREADCRUMB CSS START --------
----------------------------------------*/
-.blog-page .single-post {
-	margin-bottom: 40px;
-}
-.pagination {
-    text-align: center;
-    display: block;
-    margin-bottom: 40px;
-}
-.pagination li {
-    display: inline-block;
-}
-.pagination li a {
-    background-color: #000529;
-    background-image: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%);
-    background-image: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
-    background-image: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    color: #fff;
-    font-size: 18px;
-}
-.pagination li a:hover {
-	background-image: none;
-    background-color: #000;
-}
-/*--------------------------------------
---------- BREADCRUMB CSS END ---------
----------------------------------------*/
-
