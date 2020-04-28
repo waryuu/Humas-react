@@ -1,4 +1,5 @@
-Next : 
+Next :
+<br> 
 0. Kabar terkini + jelajahi on Landing Page [2 days max estimation]
 1. Convert to reactjs (header & footer is priority, cuz it will used on other pages too, do it first) [it'll take 5 days perhaps]
 2. Continue working on other pages (it will take a long time, just keep it on basic html to make it ez) [almost 2 weeks?]
