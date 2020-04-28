@@ -21,12 +21,13 @@
 /*----------------------------------
 --------- THEME DEFAULT CSS --------
 ----------------------------------*/
+/*SEGOE UI FONT BELUM DI IMPORT*/
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900');
 body {
     line-height: 24px;
     font-size: 14px;
     color: #666666;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Segoe UI', sans-serif;
     font-weight: 400;
 }
 
@@ -37,48 +38,54 @@ body {
 }
 h1 {
     font-size: 48px;
-    color: #16420b;
+    color: #005131;
+    font-family: 'Segoe UI'
 }
 h2 {
     font-size: 30px;
-	color: #16420b;
+	color: #005131;
+    font-family: 'Segoe UI'
 }
 h3 {
     font-size: 24px;
-    color: #16420b;
+    color: #005131;
+    font-family: 'Segoe UI'
 }
 h4 {
     font-size: 18px;
-	color: #16420b;
+	color: #005131;
+    font-family: 'Segoe UI'
 }
 h6 {
     font-size: 14px;
-	color: #16420b;
+	color: #005131;
+    font-family: 'Segoe UI'
 }
 h5 {
-	color: #16420b;
+	color: #005131;
+    font-family: 'Segoe UI'
 }
 a {
     transition: 0.6s;
+    font-family: 'Segoe UI'
 }
-/*a,
+a,
 a:hover {
     color: #000;
-}*/
+}
 img {
     max-width: 100%;
     height: auto;
 }
 
-/*a,
+a,
 a:hover,
 a:focus,
 a:active,
 button:focus {
     text-decoration: none;
-    border: none;
     outline: 0;
-}*/
+}
 
 }
 
@@ -122,10 +129,10 @@ button[type="submit"] {
     color: #666;
     padding: 4px 15px;
 }
-/*textarea:focus {
+textarea:focus {
     outline: none !important;
     box-shadow: none !important;
-}*/
+}
 .sec-title {
     text-align: center;
     max-width: 600px;
@@ -194,6 +201,10 @@ button[type="submit"] {
     width: 800px;
     margin: auto;
 }
+.container-large {
+    width: 1240px;
+    margin: auto;
+}
 .container-head {
     width: 1260px;
     height: 50px;
@@ -225,7 +236,7 @@ button[type="submit"] {
 
 .navbar a {
     display: inline-block;
-    color: green;
+    color: #005131;
     padding: 5px 16px;
 	margin: 0 3px;
     border: 1px solid transparent;
@@ -235,6 +246,7 @@ button[type="submit"] {
 .dropdown {
     position: relative;
     display: inline-block;
+    color: #005131;
 }
 .dropdown-home {
   position: relative;
@@ -244,7 +256,7 @@ button[type="submit"] {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #00FF00;
+  background: rgba(0, 81, 49, 0.9);
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(3,0,0,0.2);
   z-index: 1;
@@ -257,7 +269,7 @@ button[type="submit"] {
   text-decoration: none;
   text-align: left;
   display: block;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #fff;
   border-bottom-style: solid;
 }
 
@@ -274,15 +286,16 @@ button[type="submit"] {
 .navbar ul a.active,
 .navbar ul a:hover,
 .navbar ul a:focus{
-    border-bottom: 3px solid green;
-    border-bottom-style: groove;
+    border-bottom: 4px #004547;
+    border-bottom-style: solid;
     background-color: transparent;  
 }
 /*Buat ganti warna headernya*/
 .header.sticky {
-	/*border-bottom: 3px solid #000;*/
+	/*border-bottom: 1px solid green;*/
     padding: 5px 0;
 	background: white;
+    opacity: 95%
 }
 
 .navbar a.appao-btn {
@@ -301,17 +314,16 @@ button[type="submit"] {
   display: none;
 }
 .mySlides img {
-  width: 1260px;
+  width: 1280px;
   height: 600px;
 }
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 0;
   width: auto;
-  margin-top: -22px;
-  padding: 16px;
+  padding: 300px 0 300px 0px;
   font-weight: bold;
   font-size: 25px;
   transition: 0.6s ease;
@@ -321,20 +333,28 @@ button[type="submit"] {
   display: inline-block;
 }
 /* Position the "next button" to the right */
+.prev {
+  padding-right: 30px;
+}
 .next {
+  right: 0px;
+  padding-left : 30px;
+}
+.left {
+  margin: auto;
+  padding : auto;
+}
+.right {
   right: 0px;
   border-radius: 3px 0 0 3px;
 }
-.prev {
-  border-radius: 3px 0 0 3px;
-}
+
 .next span, .prev span {
-  color:black;
+  color: #015330;
 }
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  /*background-color: rgba(0,0,0,0.8);*/
-  background-color: #fff;
+  background-color: rgba(55, 83, 1, 0.5);
 }
 /* The dots/bullets/indicators */
 .dot {
@@ -342,13 +362,13 @@ button[type="submit"] {
   height: 20px;
   width: 20px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: rgba(55, 83, 1, 0.5);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 .active, .dot:hover {
-  background-color: green;
+  background-color: #015330;
 }
 /*--------------------------------------
 -------- WELCOME PAGE + SLIDESHOW CSS END --------
@@ -404,26 +424,57 @@ button[type="submit"] {
 	text-align: center;
 }
 .row-profil{
-    width : 30%;
+    width : auto;
     margin: auto;
     display: inline;
 }
 
 .single-profil-box {
-    border-radius: 10px;
-    border: 1px solid green;
+    border-radius: 100px;
+    border: 4px solid #005131;
     display: block;
-    font-color: green;
+    font-color: rgba(0, 0, 0, 0.5);
+    /*min-width: */
 }
 .single-profil-box:hover {
 	box-shadow: 0 0 10px green;
 
 }
 .single-profil-box h4 {    
-	margin: 10px 10px;
+	margin: 25px 25px;
     text-align: center;
-
 }
+.profil-title{
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    top: -6px;
+}
+.profil-title h1{
+    color: #393939;
+    font-weight: bold;
+    font-size: 60px;
+    
+}
+.profil-title h3{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+}
+.profil-content {
+    font-family: Segoe UI;
+    line-height: 32px;
+    width: 754px;
+    text-align: center;
+    position: relative;
+    /*left: 343px;*/
+    margin: auto;
+}
+.profil-content p {
+    font-size : 24px;
+    color: #393939;
+}
+
 /*--------------------------------------
 ---------- PROFIL AREA CSS END /FIXED ----------
 ---------------------------------------*/
@@ -454,6 +505,8 @@ button[type="submit"] {
 }
 .single-counter-box i::before {
     background: #0861b5;
+    font-family: Segoe UI;
+    text-align: center;
     width: 120px;
     display: block;
     height: 120px;
@@ -473,11 +526,36 @@ button[type="submit"] {
 .single-counter-box h1 {
     margin: 25px 0 10px;
     color : green;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 80px;
+    color: #393939;
 }
-.single-counter-box p {
+.single-counter-box h2 {
+    margin: 25px 0 10px;
+    font-weight: 300;
     font-size: 24px;
-    line-height: normal;
-    color : green;
+    line-height: 32px;
+    color : rgba(0, 0, 0, 0.5);
+}
+.single-counter-box h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 73.7526px;
+    line-height: 98px;
+    color: #393939;
+}
+
+.single-counter-box p {
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20.9172px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #393939;
 }
 
 .single-counter-box {
@@ -497,7 +575,6 @@ button[type="submit"] {
 ---------------------------------------*/
 
 .countdown-area {
-    
     position: relative;
     text-align: center;
     color: #fff;
@@ -505,26 +582,70 @@ button[type="submit"] {
 .countdown {
     position: relative;
     text-align: center;
-    color: green;
     padding-top: 50px;
     font-size: 30px;
 }
+.edge-left-top {
+    border-radius: 22px 0px 0px 0px;
+}
+.edge-right-top {
+    border-radius: 0px 22px 0px 0px;
+}
+.edge-right-bot {
+    border-radius: 0px 0px 22px 0px;
+}
+.edge-left-bot {
+    border-radius: 0px 0px 0px 22px;
+}
 .single-countdown-box {
-    margin-top: 40px;
+    /*margin-top: 40px;*/
     text-align: center;
+    font-family: Segoe UI;
+}
+.single-countdown-box table {
+    width: 850px;
+    height: 200px;
+    margin : auto;
+}
+.single-countdown-box th {
+  text-align: center;
+  padding-top : 30px;
+  background: #004547;
+  font-size: 60px;
+  line-height: 32px;
+}
+.single-countdown-box td {
+  text-align: center;
+  padding-bottom: 30px;
+  background: #004547;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .single-countdown-box h1 {
-    font-size: 25px;
-    color : green;
+    margin-top : 10px;  
+    font-style: normal;
     font-weight: bold;
-
+    font-size: 60px;
+    line-height: 80px;
+    color: #393939;
+}
+.single-countdown-box h4 {
+    margin-top : 0px;
+    margin-bottom: 80px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    color: #707070;
 }
 .single-countdown-box p {
     font-size: 16px;
     line-height: normal;
-    color : green;
+    color : black;
+
 }
+
 
 /*--------------------------------------
 -------- COUNTDOWN / HITUNG MUNDUR END --------
@@ -541,34 +662,41 @@ button[type="submit"] {
 }
 .agenda-area h2 {
     text-align: left;
-    font-color: black;
+    color: #393939;
 }
 
 .single-agenda-box {
     margin-top: 20px;
     padding-top: 50px;
     padding-bottom: 50px;
-    border : 3px solid green;
-    font-color: green;
+    border: 4px solid #005131;
     text-align: center;
     display: block;
+    border-radius: 0px;
 }
-/*.single-agenda-box a:hover {
-    border: 3px solid red;
-}*/
+.single-agenda-box h4 {    
+    margin: 25px 25px;
+    text-align: center;
+}
+.single-agenda-box:hover {
+    box-shadow: 0 0 20px green;
+}
 
 .agenda-next {
     margin-right: 100px;
     text-align : right;
-    font-size: 15px;
+    font-size: 24px;
+    line-height: 32px;
     font-weight: bold;
-    align-content: right;
-    color: green;
+    align-content: left;
+    font-family: Segoe UI;
+    font-weight: bold;
+    color: #005131;
 }
 .agenda-next1 {
     width : 500px;
     padding-top: 20px;
-    margin-left: 700px;
+    margin-left: 1020px;
 
 }
 
@@ -586,7 +714,7 @@ button[type="submit"] {
 /*--------------------------------------
 --- SCREENSHOT IMAGE AREA CSS START ----
 ---------------------------------------*/
-.screenshots-area .sec-title {
+/*.screenshots-area .sec-title {
     margin-bottom: 15px;
 }
 .screenshot-wrap .slick-list {
@@ -654,27 +782,14 @@ button[type="submit"] {
 }
 .single-screenshot.slick-center img {
     padding: 35px 20px 55px;
-}
+}*/
 /*--------------------------------------
 -------- SCREENSHOT AREA CSS END -------
 ---------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer {
     /*background: url(../img/footer-bg.jpg) no-repeat center / cover;*/
     position: relative;
+    margin-top: 100px;
     z-index: 1;
     padding-bottom: 35px;
 }
