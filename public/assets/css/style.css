@@ -61,16 +61,16 @@ h5 {
 a {
     transition: 0.6s;
 }
-a,
+/*a,
 a:hover {
     color: #000;
-}
+}*/
 img {
     max-width: 100%;
     height: auto;
 }
 
-a,
+/*a,
 a:hover,
 a:focus,
 a:active,
@@ -78,7 +78,7 @@ button:focus {
     text-decoration: none;
     border: none;
     outline: 0;
-}
+}*/
 
 }
 
@@ -122,10 +122,10 @@ button[type="submit"] {
     color: #666;
     padding: 4px 15px;
 }
-textarea:focus {
+/*textarea:focus {
     outline: none !important;
     box-shadow: none !important;
-}
+}*/
 .sec-title {
     text-align: center;
     max-width: 600px;
@@ -225,7 +225,7 @@ textarea:focus {
 
 .navbar a {
     display: inline-block;
-    color: yellow;
+    color: green;
     padding: 5px 16px;
 	margin: 0 3px;
     border: 1px solid transparent;
@@ -235,22 +235,30 @@ textarea:focus {
 .dropdown {
     position: relative;
     display: inline-block;
-
 }
+.dropdown-home {
+  position: relative;
+  display: inline-block;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: transparent;
-  min-width: 160px;
+  background-color: #00FF00;
+  min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(3,0,0,0.2);
   z-index: 1;
+  border-radius: 10px;
 }
 .dropdown-content a {
-  color: black;
+  color: white;
+  font-weight: bold;
   padding: 12px 16px;
   text-decoration: none;
   text-align: left;
   display: block;
+  border-bottom: 2px solid white;
+  border-bottom-style: solid;
 }
 
 .dropdown:hover .dropdown-content {
@@ -262,18 +270,19 @@ textarea:focus {
 .slicknav_navbar {
 	display: none;
 }
-.navbar ul a.active{
-    background-color: black;
-    border-radius: 10px;
-}
-.navbar ul a:hover {
-    background-color: red;
+
+.navbar ul a.active,
+.navbar ul a:hover,
+.navbar ul a:focus{
+    border-bottom: 3px solid green;
+    border-bottom-style: groove;
+    background-color: transparent;  
 }
 /*Buat ganti warna headernya*/
 .header.sticky {
-	border-bottom: 3px solid #000;
+	/*border-bottom: 3px solid #000;*/
     padding: 5px 0;
-	background: grey;
+	background: white;
 }
 
 .navbar a.appao-btn {
@@ -330,8 +339,8 @@ textarea:focus {
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -405,8 +414,6 @@ textarea:focus {
     border: 1px solid green;
     display: block;
     font-color: green;
-
-
 }
 .single-profil-box:hover {
 	box-shadow: 0 0 10px green;
@@ -485,9 +492,8 @@ textarea:focus {
 -------- SCB DALAM ANGKA / COUNTERUP AREA CSS END --------
 ---------------------------------------*/
 
-
 /*--------------------------------------
--------- COUNTDOWN / HITUNG MUNDUR --------
+-------- COUNTDOWN / HITUNG MUNDUR START --------
 ---------------------------------------*/
 
 .countdown-area {
@@ -495,7 +501,6 @@ textarea:focus {
     position: relative;
     text-align: center;
     color: #fff;
-
 }
 .countdown {
     position: relative;
@@ -520,6 +525,62 @@ textarea:focus {
     line-height: normal;
     color : green;
 }
+
+/*--------------------------------------
+-------- COUNTDOWN / HITUNG MUNDUR END --------
+---------------------------------------*/
+
+
+/*--------------------------------------
+----------------AGENDA START ------------
+---------------------------------------*/
+.agenda-area {
+    
+    position: relative;
+    margin-top: 70px; 
+}
+.agenda-area h2 {
+    text-align: left;
+    font-color: black;
+}
+
+.single-agenda-box {
+    margin-top: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border : 3px solid green;
+    font-color: green;
+    text-align: center;
+    display: block;
+}
+/*.single-agenda-box a:hover {
+    border: 3px solid red;
+}*/
+
+.agenda-next {
+    margin-right: 100px;
+    text-align : right;
+    font-size: 15px;
+    font-weight: bold;
+    align-content: right;
+    color: green;
+}
+.agenda-next1 {
+    width : 500px;
+    padding-top: 20px;
+    margin-left: 700px;
+
+}
+
+
+
+/*--------------------------------------
+----------------AGENDA END ------------
+---------------------------------------*/
+
+
+
+
 
 
 /*--------------------------------------
@@ -597,6 +658,16 @@ textarea:focus {
 /*--------------------------------------
 -------- SCREENSHOT AREA CSS END -------
 ---------------------------------------*/
+
+
+
+
+
+
+
+
+
+
 
 
 
