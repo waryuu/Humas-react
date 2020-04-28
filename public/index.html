@@ -32,12 +32,12 @@
 		<header class="header">
 			<div class="container-head">
 				<div class="row">
-					<div class="col-lg-2 col-md-3 col-6">
+					<div class="col-lg-2 col-md-9 col-6">
 						<div class="logo">
 							<a href="#home"><img src="assets/img/logocendekiabaznas.png" alt="logo" /></a>
 						</div>
 					</div>
-					<div class="col-lg-10 col-md-9 col-6">
+					<div class="col-lg-10 col-md-8 col-6">
 					    <div class="navbar">
                             <ul id="primary-navbar">
                                  <a class="nav-link active" href="#">Home</a>
@@ -64,18 +64,44 @@
 		<!-- BACKGROUND AND WELCOME CONTENT FIXED -->
 		<!-- hero area start -->
 		<section class="hero-area" id="home">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="hero-area-content">
-							<h1>Selamat Datang di </h1>
-              				<h1>SMP Cendekia Baznas</h1>
-						</div>
-					</div>
-					
+			<div class="container-slideshow">
+				 <!-- Slideshow container -->
+
+				  <!-- Full-width images with number and caption text -->
+				  <div class="mySlides">
+				    <img src="/assets/img/scb1.png" style="width:100%">
+				  </div>
+
+				  <div class="mySlides">
+				    <img src="/assets/img/rog.jpg" style="width:100%">
+				  </div>
+
+				  <div class="mySlides">
+				    <img src="/assets/img/rog2.jpg" style="width:100%">
+				  </div>
+
+				  <!-- Next and previous buttons -->
+				  <div class="prev" onclick="plusSlides(-1)">
+				  	<span class="right">&#10094;</span>
+				  </div>
+				  <div class="next" onclick="plusSlides(1)">
+				  	<span class="left">&#10095;</span>
+				  </div>
 				</div>
+				<br>
+
+				<!-- The dots/circles -->
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span>
+				  <span class="dot" onclick="currentSlide(2)"></span>
+				  <span class="dot" onclick="currentSlide(3)"></span>
+				</div> 
+
+				
 			</div>
-		</section><!-- hero area end -->
+		</section>
+
+		<!-- hero area end -->
 
 		<!-- CONTENT AREA TILL END -->
 		<!-- Profil Section START -->
@@ -236,7 +262,7 @@
 
 		
 
-
+        
 
 
 
@@ -333,5 +359,7 @@
 		<script src="assets/js/waypoints.min.js"></script>
 		<!-- main JS -->
 		<script src="assets/js/main.js"></script>
+
+		<script src="assets/js/slideshow.min.js"></script>
 	</body>
 </html>

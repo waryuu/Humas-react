@@ -63,7 +63,7 @@ a {
 }
 a,
 a:hover {
-    color: #666666;
+    color: #000;
 }
 img {
     max-width: 100%;
@@ -128,16 +128,17 @@ textarea:focus {
 }
 .sec-title {
     text-align: center;
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto 40px;
 }
-.sec-title h2 {
+.sec-title h1 {
     padding-bottom: 20px;
     margin-bottom: 20px;
     position: relative;
     top: -6px;
+    color: green;
 }
-.sec-title h2 .sec-title-border {
+.sec-title h1 .sec-title-border {
     width: 250px;
     position: absolute;
     bottom: 0;
@@ -195,9 +196,15 @@ textarea:focus {
 }
 .container-head {
     width: 1260px;
+    height: 50px;
     margin: auto;
-
 }
+.container-slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
 
 /*--------------------------------------
 -------- HEADER AREA CSS START --------
@@ -207,7 +214,10 @@ textarea:focus {
 	transition: all 0.4s;
     width: 100%;
     z-index: 99;
-	padding: 18px 0;
+	padding: 1px 0;
+}
+.header img{
+    /*padding-bottom: 0px*/
 }
 .navbar {
     text-align: right;
@@ -225,7 +235,6 @@ textarea:focus {
 .dropdown {
     position: relative;
     display: inline-block;
-
 
 }
 .dropdown-content {
@@ -274,6 +283,68 @@ textarea:focus {
 --------- HEADER AREA CSS END ---------
 ---------------------------------------*/
 
+
+
+/*--------------------------------------
+-------- WELCOME PAGE + SLIDESHOW CSS START --------
+---------------------------------------*/
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  width: 1260px;
+  height: 600px;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color : transparent;
+  display: inline-block;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0px;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  border-radius: 3px 0 0 3px;
+}
+.next span, .prev span {
+  color:black;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  /*background-color: rgba(0,0,0,0.8);*/
+  background-color: #fff;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: green;
+}
+/*--------------------------------------
+-------- WELCOME PAGE + SLIDESHOW CSS END --------
+---------------------------------------*/
+
 /*--------------------------------------
 -------- HERO AREA CSS START --------
 ---------------------------------------*/
@@ -282,12 +353,8 @@ textarea:focus {
     padding-top: 140px;
 	z-index: 1;
 	position: relative;
-    background-image: url(../img/scb1.png);
+    /*background-image: url(../img/scb1.png);*/
     /*repeat bisa untuk background nih*/
-    background-repeat: repeat;
-    background-position: center;
-	background-attachment: fixed;
-    background-size: cover;
 	overflow: hidden;
 }
 .hero-area::before {
@@ -299,15 +366,15 @@ textarea:focus {
 	bottom: 0;
 	z-index: -1;
 	position: absolute;
-	background: grey; 
+	background: white; 
 }
 
 .hero-area-content {
-    color: #fff;
+    color: #000;
 	padding: 115px 0px 230px;
 }
 .hero-area-content h1 {
-    color: #fff;
+    color: #000;
     text-align: center
 }
 .hero-area-content p {
@@ -594,3 +661,5 @@ textarea:focus {
 /*--------------------------------------
 --------- SCROLL-TO-TOP CSS END ---------
 ---------------------------------------*/
+
+
